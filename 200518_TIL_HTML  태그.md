@@ -1,4 +1,5 @@
 # 200518_TIL_html 5 
+## input  태그
 * input형식의 추가
 	* date, month, range, search, url, email
 * input의 속성
@@ -8,6 +9,8 @@
 ```
 	* placeholder : 입력란에 안내 메세지 
 	* autofocus : 페이지에 이동했을 때 원하는 입력칸에 커서 위치
+
+## 유효성 검사
 * 입력값 체크 : 유효성 검사
 ```
 <form action="post" required>
@@ -21,5 +24,3 @@
 			* “.” : 어떤 문자든 상관없음
 			* “+” : 어떤 문자든 1개이상 반드시 입력
 			* [0-9] : 숫자로만 입력
-
-#코딩/TIL
