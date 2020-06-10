@@ -1,3 +1,11 @@
+# 200610_TIL_부동산 프로그램 작성
+
+# 출력예제
+# 총 3대의 매물이 있습니다.
+# 강남 아파트 매매 10억 2010년
+# 마포 오피스텔 전세 5억 2007년
+# 송파 빌라 월세 500/5 2000년
+
 class House:
     # 매물초기화
     def __init__(self, location, house_type, deal_type, price, completion_year):
