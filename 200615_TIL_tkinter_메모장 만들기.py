@@ -27,11 +27,21 @@ def create_file():
 # 메뉴만들기
 menu = Menu(root)
 
-menu_file = Menu(menu, tearoff = 0)     #
+menu_file = Menu(menu, tearoff=0)     #
 menu_file.add_command(label="New File", command=create_file)
-
-
 menu.add_cascade(label="File", menu=menu_file)
 
 root.config(menu=menu)
 root.mainloop()
+
+
+'''
+menubar=tkinter.Menu(window)
+
+menu_1=tkinter.Menu(menubar, tearoff=0)
+menu_1.add_command(label="하위 메뉴 1-1")
+menu_1.add_command(label="하위 메뉴 1-2")
+menu_1.add_separator()
+menu_1.add_command(label="하위 메뉴 1-3", command=close)
+menubar.add_cascade(label="상위 메뉴 1", menu=menu_1)
+'''
