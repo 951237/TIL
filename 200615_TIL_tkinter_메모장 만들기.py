@@ -17,31 +17,56 @@ quiz ) tkinter를 이용한 메모장 프로그램 만들기
 from tkinter import *
 
 root = Tk()
-root.title("제목없음 - windows 메모장")
-root.geometry("640x480")
-root.resizable(True, True)
+root.title("제목없음 - windows 메모장")     # 제목
+root.geometry("640x480")    # 창의 크기
+
+
+
 
 def create_file():
     print("새 파일을 만듭니다.")
 
+def open_file():
+    pass
+
+def save_file():
+    pass
+
+
+
 # 메뉴만들기
 menu = Menu(root)
 
+# 파일메뉴
 menu_file = Menu(menu, tearoff=0)     #
-menu_file.add_command(label="New File", command=create_file)
+menu_file.add_command(label="Open", command=open_file)
+menu_file.add_command(label="Save", command=save_file)
+menu_file.add_separator()
+menu_file.add_command(label="Exit", command=root.quit)
 menu.add_cascade(label="File", menu=menu_file)
+
+# 편집메뉴
+menu.add_cascade(label="Edit", menu=menu_edit)
+
+# 서식
+menu.add_cascade(label="Style", menu=menu_style)
+
+# 보기
+menu.add_cascade(label="view", menu=menu_view)
+
+
+# 도움말
+menu.add_cascade(label="Help", menu=menu_help)
+
+# 스크롤바 처리
+scrollbar = Scrollbar(root)     # 스크롤바 오브젝트 생성
+scrollbar.pack(side="right", fill="y")  # 오른쪽에 붙여서 높이는 꽉차게
+
+# 본문영역
+txt = Text(root, yscrollcommand=scrollbar.set)      # 텍스트 창에 스크롤바 설정하기
+txt.pack(fill="both", expand=True)      # 텍스트창 양쪽으로 넓히고, 확장하기
+scrollbar.config(command=txt.yview)     # 스크롤바와 본문을 맵핑 시킴
 
 root.config(menu=menu)
 root.mainloop()
 
-
-'''
-menubar=tkinter.Menu(window)
-
-menu_1=tkinter.Menu(menubar, tearoff=0)
-menu_1.add_command(label="하위 메뉴 1-1")
-menu_1.add_command(label="하위 메뉴 1-2")
-menu_1.add_separator()
-menu_1.add_command(label="하위 메뉴 1-3", command=close)
-menubar.add_cascade(label="상위 메뉴 1", menu=menu_1)
-'''
