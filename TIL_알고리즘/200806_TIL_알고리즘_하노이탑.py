@@ -3,6 +3,7 @@
 #   원반을 옮길 도착점 기둥 to_pos
 #   옮기는 과정에서 사용할 보조 기둥 aux_pos
 # 출력 : 원반 옮기는 순서
+# 결론 : 컴퓨터로 구현하기 전에 내가 직접 할 수 있어야 한다!!!
 
 def hanoi(n, from_pos, to_pos, aux_pos):
     if n == 1:
