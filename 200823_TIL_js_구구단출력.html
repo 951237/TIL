@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>구구단 출력하기</h1>
+    <script>
+        for (var i =2; i <= 9; i++){ // 구구단의 처음 숫자 
+            document.write("<div>"); //구역나누기 html 코드 출력
+            document.write("<h3>" + i + "단</h3>"); // 구구단 몇단인지 출력
+            for (var j = 1; j <= 9; j++){ // 구구단의 두번째 숫자 
+                document.write(i + "X" + j + "=" + i*j + "<br>") // 구구단의 실제 2*1=2 출력후 한줄 띄기
+            }
+            document.write("</div>"); // 단이 끝나고 구역 나누기
+        }
+    </script>
+</body>
+</html>

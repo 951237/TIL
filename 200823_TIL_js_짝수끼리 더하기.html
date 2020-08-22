@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>짝수끼리 더하기</h1>
+
+    <script>
+        var n = prompt("숫자를 입력하세요 : ");
+        var sum = 0;
+        if(n != null){
+            for (var i = 0; i <= n; i++){
+                if( i % 2 === 1){
+                    continue;
+                }
+                sum += i;
+                document.write(i + "-------------" + sum + "<br>");
+            }
+        } else {
+            alert("숫자를 입력하세요!");
+        }
+
+    </script>
+</body>
+</html>
