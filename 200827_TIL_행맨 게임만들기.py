@@ -24,7 +24,7 @@ while True:  # 성공할 때까지 계속 반복
     if letter not in letters:  # 입력받은 문자중에 알파벳이 없으면
         letters += letter  # 단어들을 계속적으로 누가기록.
 
-    if letter in word:  # 단어에 알파벳이 있으면 
+    if letter in word:  # 단어에 알파벳이 있으면
         print("correct")  # 메세지 출력
     else:  # 그렇지 않다면
         print("wrong")  # 메세지 출력
