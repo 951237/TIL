@@ -9,7 +9,7 @@ def show countplot_by_qno(qno, fsize=(10, 6), order=None)
 
 	plt.figure(figsize = fsize)
 	sns.countplot(data=answer,
-					y = qno,
-					order = order,
-					palette="Blues_r"
-					).set_title(question[qno])
+		      y = qno,
+		      order = order,
+		      palette="Blues_r"
+		     ).set_title(question[qno])
