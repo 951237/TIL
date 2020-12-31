@@ -1,9 +1,17 @@
 from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
+import glob
+from tqdm import tqdm
 
+# PDF 보관 폴더
+PATH_FILE = 'C:\\Users\\User\\Desktop\\영민스캔'
 
-for i in range(1, 7):
-    file_1 = f'C:\\Users\\User\\Desktop\\영민스캔\\0{i}_01.pdf'
-    file_2 = f'C:\\Users\\User\\Desktop\\영민스캔\\0{i}_02.pdf'
+# 파일의 갯수 세어서 반복 회수 카운팅
+num_file = len(glob.glob(f'{PATH_FILE}\\*.*')) / 2 + 1
+
+# 파일 만들기 반복
+for i in tqdm(range(1, int(num_file)), desc='PDF 파일 합치기'):     # 파일의 전체수의 반만큼 반복(2개를 1개로 합쳐야 함)
+    file_1 = f'{PATH_FILE}\\0{i}_01.pdf'
+    file_2 = f'{PATH_FILE}\\0{i}_02.pdf'
 
     # 결과파일 패스
     result = f'C:\\Users\\User\\Desktop\\result_0{i}.pdf'
