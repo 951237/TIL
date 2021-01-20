@@ -27,33 +27,35 @@ def main():
     reader = csv.reader(date)   # cdv 파일 읽어 객체로 저장
 
     # 각반별 및 과목별 리스트 선언
-    class_1 = []
-    class_2 = []
-    class_3 = []
-    korean = []
-    english = []
-    math = []
+    result = {
+        '1반' : [],
+        '2반' : [],
+        '3반' : [],
+        '국어' : [],
+        '영어' : [],
+        '수학' : []
+    }
 
     # csv 객체 읽기
     for i, line in enumerate(reader):
         if i != 0:
             if line[2] == "1반":
-                class_1.append(line)    # 1반 데이터 모으기
+                result['1반'].append(line)    # 1반 데이터 모으기
             elif line[2] == "2반":
-                class_2.append(line)    # 2반 데이터 모으기
+                result['2반'].append(line)    # 2반 데이터 모으기
             elif line[2] == "3반":
-                class_3.append(line)    # 3반 데이터 모으기
-            korean.append(int(line[3]))     # 국어 점수 모으기
-            english.append(int(line[4]))    # 영어 점수 모으기
-            math.append(int(line[5]))       # 수학 점수 모으기
+                result['3반'].append(line)    # 3반 데이터 모으기
+            result['국어'].append(int(line[3]))     # 국어 점수 모으기
+            result['수학'].append(int(line[4]))    # 영어 점수 모으기
+            result['영어'].append(int(line[5]))       # 수학 점수 모으기
     
-    sum_class_1 = get_class_sum(class_1)    # 1반 평균
-    sum_class_2 = get_class_sum(class_2)    # 2반 평균
-    sum_class_3 = get_class_sum(class_3)    # 3반 평균
+    sum_class_1 = get_class_sum(result['1반'])    # 1반 평균
+    sum_class_2 = get_class_sum(result['2반'])    # 2반 평균
+    sum_class_3 = get_class_sum(result['3반'])    # 3반 평균
 
-    sum_korean = get_subject_sum(korean)    # 국어 평균
-    sum_english = get_subject_sum(english)  # 영어 평균
-    sum_math = get_subject_sum(math)        # 수학 평균
+    sum_korean = get_subject_sum(result['국어'])    # 국어 평균
+    sum_english = get_subject_sum(result['영어'])  # 영어 평균
+    sum_math = get_subject_sum(result['수학'])        # 수학 평균
 
     # 결과 쓰기
     with open(PATH_RESULT, 'w') as f:
