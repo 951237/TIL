@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+
+/* btn 클래스 */
+
+.btn {
+    cursor: pointer;
+}
+
+h1 {
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+
+/* clicked class */
+
+.clicked {
+    color: darkgray;
+}
