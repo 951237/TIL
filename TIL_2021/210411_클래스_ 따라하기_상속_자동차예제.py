@@ -14,6 +14,18 @@ class Vehicle:
     def get_desc(self):
         return f"차량 : {self.make}, {self.model}, {self.color}, {self.price}"
 
+# 클래스의 상속
+class Truck(Vehicle):
+    def __init__(self, make, model, color, price, payload):     # 생성자 
+        super().__init__(make, model, color, price)     # vehicle 상속받기
+        self.payload = payload      # 트럭의 인스턴스 변수 생성
+
+    def set_payload(self, payload):     # 설정자
+        self.payload = payload
+
+    def get_payload(self):  # 접근자
+        return self.payload
+
 v1 = Vehicle("현대", "아반떼", "흰색", "4천만원")
 v2 = Vehicle("기아", "모닝", "빨강색", "2천만원")
 v1.set_make("기아")
