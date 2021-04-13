@@ -26,8 +26,17 @@ class Truck(Vehicle):
     def get_payload(self):  # 접근자
         return self.payload
 
-v1 = Vehicle("현대", "아반떼", "흰색", "4천만원")
-v2 = Vehicle("기아", "모닝", "빨강색", "2천만원")
-v1.set_make("기아")
-print(v1.get_desc())
-print(v2.get_desc())
+def main():
+    my_truck = Truck("Tesla", "Model S", "White", 1000, 2000)
+    my_truck.set_make("Tesla")
+    my_truck.set_payload(2000)
+    print(my_truck.get_desc())
+
+
+# v1 = Vehicle("현대", "아반떼", "흰색", "4천만원")
+# v2 = Vehicle("기아", "모닝", "빨강색", "2천만원")
+# v1.set_make("기아")
+# print(v1.get_desc())
+# print(v2.get_desc())
+
+main()
