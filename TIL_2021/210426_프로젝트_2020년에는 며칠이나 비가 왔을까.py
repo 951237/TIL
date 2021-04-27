@@ -9,6 +9,8 @@ PATH_SRC = 'coding_TIL/TIL_2021/210426_데이터셋_2020년 기온 데이터_강
 
 # 클래스로 리팩토링
 class Weather_2020:
+    PATH_SRC = 'coding_TIL/TIL_2021/210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
+
     def __init__(self, path_src=''):
         self.path_src = path_src
 
@@ -19,12 +21,21 @@ class Weather_2020:
                  '일강수량(mm)', '최대 풍속(m/s)', '평균 풍속(m/s)']]
         return df
 
-    def count_rain_day(self, df):
+    def count_rain_day(self):
+        df = self.make_df_rain(PATH_SRC)
         rain_amount = input('얼마이상의 강수량의 날을 알고 싶으세요? ')
         # 2020년 비가 온날 카운트하기
         day_rain = df.loc[df['일강수량(mm)'] > int(rain_amount)]
         print(f'2020년에 {rain_amount}mm이상 비가 온날은 {len(day_rain)}일 입니다.')
 
+    def get_riding_dist(self):
+        df = self.make_df_rain(PATH_SRC)
+        rain_amount = input('얼마이상의 강수량의 날을 알고 싶으세요? ')
+        # 2020년 비가 온날 카운트하기
+        day_rain = df.loc[df['일강수량(mm)'] > int(rain_amount)]
+        print(f'2020년에 자전거를 {(365 - len(day_rain)) * 14}km를 탔습니다.')
+
 weather = Weather_2020()
-df = weather.make_df_rain(PATH_SRC)
-weather.count_rain_day(df)
+# weather.get_riding_dist() # 2020년 자전거 탄 거리 구하기
+weather.count_rain_day()
+
