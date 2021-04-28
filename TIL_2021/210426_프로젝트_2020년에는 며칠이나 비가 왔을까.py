@@ -1,15 +1,10 @@
 import pandas as pd
 import tqdm
 
-# 데이터 찾기
-    # 기상청 기상자료 개방포털에서 수집
-    # https://data.kma.go.kr/data/grnd/selectAwosRltmList.do?pgmNo=638
-    # 파일 경로
-PATH_SRC = 'coding_TIL/TIL_2021/210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
 
 # 클래스로 리팩토링
 class Weather_2020:
-    PATH_SRC = 'coding_TIL/TIL_2021/210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
+    # PATH_SRC = 'coding_TIL/TIL_2021/210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
 
     def __init__(self, path_src=''):
         self.path_src = path_src
@@ -21,7 +16,7 @@ class Weather_2020:
                  '일강수량(mm)', '최대 풍속(m/s)', '평균 풍속(m/s)']]
         return df
 
-    def count_rain_day(self):
+    def count_rain_day(self, PATH_SRC):
         df = self.make_df_rain(PATH_SRC)
         rain_amount = input('얼마이상의 강수량의 날을 알고 싶으세요? ')
         # 2020년 비가 온날 카운트하기
@@ -30,12 +25,25 @@ class Weather_2020:
 
     def get_riding_dist(self):
         df = self.make_df_rain(PATH_SRC)
-        rain_amount = input('얼마이상의 강수량의 날을 알고 싶으세요? ')
+        rain_amount = input('얼마 이상의 강수량의 날을 알고 싶으세요? ')
         # 2020년 비가 온날 카운트하기
         day_rain = df.loc[df['일강수량(mm)'] > int(rain_amount)]
         print(f'2020년에 자전거를 {(365 - len(day_rain)) * 14}km를 탔습니다.')
 
+
+# 데이터 찾기
+    # 기상청 기상자료 개방포털에서 수집
+    # https://data.kma.go.kr/data/grnd/selectAwosRltmList.do?pgmNo=638
+    # 파일 경로
+PATH_SRC = '210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
+
+
+# 인스턴트 생성
 weather = Weather_2020()
 # weather.get_riding_dist() # 2020년 자전거 탄 거리 구하기
-weather.count_rain_day()
 
+# 2020년 비 온날 구하기
+# weather.count_rain_day(PATH_SRC)
+
+# 2020년 자전거 탄 거리 어림하기
+# weather.get_riding_dist()
