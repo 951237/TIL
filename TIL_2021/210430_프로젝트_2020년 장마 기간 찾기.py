@@ -33,6 +33,8 @@ class Weather_2020:
         day_rain = df.loc[df['일강수량(mm)'] > int(rain_amount)]
         print(f'2020년에 자전거를 {(365 - len(day_rain)) * 14}km를 탔습니다.')
 
+    def 
+
 
 # 데이터 찾기
     # 기상청 기상자료 개방포털에서 수집
