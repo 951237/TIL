@@ -4,7 +4,7 @@ import tqdm
 import matplotlib.pyplot as plt
 from matplotlib import rc
 import warnings
-%matplotlib inline
+# %matplotlib inline
 warnings.filterwarnings(action='ignore')  # 에러메세지 처리
 rc('font', family='AppleGothic')  # 한글폰트 설정
 
@@ -58,7 +58,7 @@ class Weather_2020:
         plt.show()
 
 
-PATH_SRC = '210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
+PATH_SRC = 'coding_TIL/TIL_2021/210426_데이터셋_2020년 기온 데이터_강수량 프로젝트.csv'
 
 # 월별 기간 딕셔너리
 dic_month_term = {
@@ -85,3 +85,5 @@ df = weather.make_preprocessing(PATH_SRC)
 
 for i in dic_month_term.keys():
     weather.draw_graph(df, i)
+
+# weather.draw_graph(df, '1월')
