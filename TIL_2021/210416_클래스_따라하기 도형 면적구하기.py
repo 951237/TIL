@@ -1,5 +1,5 @@
-class Shape:
-    def __init__(self, x, y):
+class Shape:    # 클래스 선언
+    def __init__(self, x, y):   # 생성자
         self.x = x
         self.y = y
 
@@ -9,9 +9,9 @@ class Shape:
     def perimeter(self):
         print("계산할 수 있음.")
 
-class Rectangle(Shape):
+class Rectangle(Shape): # 클래스 
     def __init__(self, x, y, w, h):
-        super().__init__(x, y)
+        super().__init__(x, y)  # 상속
         self.w = w
         self.h = h
 
