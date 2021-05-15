@@ -3,7 +3,7 @@ import telebot
 import requests
 from bs4 import BeautifulSoup
 
-API_KEY = '1644820427:AAEllDn4xGfRAFHGpb9lFxx5QsK-__AG7L8'
+API_KEY = ''
 bot = telebot.TeleBot(API_KEY)
 chid_id = '428116987'
 
