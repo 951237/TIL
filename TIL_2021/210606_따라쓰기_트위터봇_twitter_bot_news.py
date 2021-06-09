@@ -63,3 +63,24 @@ class NewBot:
         pw.typing(ps)
         pw.key_press_once("enter")
         time.sleep(5)
+
+    def tweet(self, text, interval):
+        self.driver.get("https://twitter.com/intent/tweet")
+        time.sleep(2)
+        pw.type_int(text)
+        time.sleep(1)
+        pw.key_on("control")
+        pw.key_on("enter")
+        pw.key_off("control")
+        pw.key_off("enter")
+        time.sleep(interval)
+
+    def tweet_all(self, hashtags = "", interval=15):
+        for el in self.views_list:
+            self.tweet(el.strip() + " "+hashtags, interval)
+
+    def tweet_all_news(self, keyword, hashtags=" ", interval=15):
+        self.news_crawler(keyword)
+        self.twitter_home()
+        self.tweet_all(hashtags, interval)
+        time.sleep(interval)
