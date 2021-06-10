@@ -4,16 +4,18 @@ import pywinmacro as pw
 import time
 import pyperclip
 
+
+# 뉴스봇 클래스
 class NewBot:
     def __init__(self):
-        self.query = "https://www.google.com/search?tbm=news&q="
-        self.option = options()
-        self.option.add_argument("--window-size = 1600, 900")
-        self.driver = webdriver.Chrome(excutable_path= "chromedriver.exe", chrome_options=self.options)
-        self.new_list = []
-        self.new_text = ""
+        self.query = "https://www.google.com/search?tbm=news&q=" # 구글 검색 쿼리 앞부분
+        self.option = options() # 크롬 웹드라이버 옵션 
+        self.option.add_argument("--window-size = 1600, 900") # 크롬 웹드라이버 창 크기
+        self.driver = webdriver.Chrome(excutable_path= "chromedriver.exe", chrome_options=self.options) # 크롬 웹드라이버 프로그램 설치 경로.  현재경로에 같이 있음. 
+        self.new_list = [] # 뉴스 기사 담을 리스트
+        self.new_text = "" # 뉴스 기사 텍스트 변스 
 
-    def kill(self):
+    def kill(self): # 크롬 웹드라이버 끄기 
         self.driver.quit()
 
     def search(self, keyword):
@@ -35,16 +37,15 @@ class NewBot:
 
     def scrap_new(self):
         self.copy_all()
-        self.new_list = []
         self.new_text = pyperchip.paste()
         splt = self.new_text.split("\n")
 
         for i, line in enumerate(splt):
             if len(line.strip()) < 3:
                 continue
-            elif line.strip([-3:]) in "달 전 주 전 일 전 시간 전 분 전 초 전":
-                new_news = "\n".join(split[i-3:i])
-                self.new_list.append(new_news)
+            
+            
+            _list.append(new_news)
                 
     def news_crawler(self, kewyword):
         self.search(keyword)
