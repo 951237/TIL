@@ -4,17 +4,17 @@ shape("turtle")
 speed(0)
 
 # 나무 프렉탈 그리기 
-def tree(size, levels, angle):
-	if levels == 0:
-		color("green")
-		dot(size)
-		color("black")
+def tree(size, levels, angle): # 사이즈, 깊이, 각도 설정
+	if levels == 0:		# 조건 - 레벨이 '0'이면
+		color("green")	# 색깔
+		dot(size)	# 점의 크기 설정
+		color("black")	# 선의 색깔
 		return
 	
-	forward(size)
-	right(angle)
+	forward(size) # 앞으로 
+	right(angle) 	# 오른쪽으로 회전 
 
-	tree(size * 0.8, levels -1, angle)
+	tree(size * 0.8, levels -1, angle)	# 크기를 80%, 깊이 -1, 회전 각도는 같게 - 재귀함수
 
 	left(angle *2)
 
