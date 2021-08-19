@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 폰트 오썸 코드 스크립트 -->
+  <script src="https://kit.fontawesome.com/3512cc44f9.js" crossorigin="anonymous"></script>
   <title>Youtube Mobile</title>
 </head>
 
@@ -20,8 +22,43 @@
       <i class="fas fa-ellipsis-v"></i>
     </div>
   </header>
-  <section class="player"></section>
-  <section class="info"></section>
+
+  <!-- Video Player   -->
+  <section class="player">
+    <video controls autoplay src="https://youtu.be/efvdh6b-mfY">테스트 영상</video> <!-- 비디오 링크, 서버직접 동영상도 가능-->
+  </section>
+
+  <!-- info section   -->
+  <section class="info">
+    <div class="metadata">
+      <div class="hashtags">
+        <li>#951237</li>
+        <li>#951237&coding</li>
+        <li>#951237&hope</li>
+      </div>
+      <div class="titleAndButton">
+        <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt aspernatur minus
+          ratione accusantium amet nihil accusamus nulla asperiores enim incidunt quaerat, doloribus placeat unde
+          temporibus. Recusandae vitae hic harum.</span>
+        <button class="moreBtn">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="views">
+        <span class="views">1M views 1 month</span>
+      </div>
+    </div>
+    <div class="actions">
+      <li><button><i class="fas fa-thumbs-up">1K</i></button></li>
+      <li><button><i class="fas fa-thumbs-down">0</i></button></li>
+      <li><button><i class="fas fa-share">Share</i></button></li>
+      <li><button><i class="fas fa-plus">Save</i></button></li>
+      <li><button><i class="fab fa-font-awesome-flag"></i>Report</button></li>
+    </div>
+    <div class="channel"></div>
+  </section>
+
+  <!-- upnext section -->
   <section class="UpNext"></section>
 </body>
 
