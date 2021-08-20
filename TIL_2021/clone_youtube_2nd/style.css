@@ -17,6 +17,7 @@
       --font-medium: 14px;
       --font-small: 12px;
       --font-micro: 10px;
+      --icon-large: 16px;
 }
 
 /* 문서전체에 적용 */
@@ -41,6 +42,7 @@ button:focus{
   border: none;
   cuser: pointer;
   outline:none;
+  background-color: transparent;  /*   버튼 배경 투명하게 하기 */
 }
 
 /* header */
@@ -115,3 +117,26 @@ header .icons .fa-search {
   color: var(--grey-dark-color);
 }
 
+/* Action Button */
+.actions {
+  display: flex;
+  justify-content: space-around;  /*   아이콘들을 한줄에 일정한 간격으로 배열하기  */
+  margin: var(--padding) 0;
+}
+
+.actions button {
+  display: flex;
+  flex-direction: column; /*   버튼과 글자를 아래위로 두기 위해서 플레스 - 플래스 방향은 칼럼 */
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.actions button i{
+  margin: 0 auto; /*   버튼과 아래의 글자를 가운데에 정렬하기위해서 여백 조정  */
+  margin-bottom: calc(var(--padding) /2);
+  font-size : var(--icon-large);
+}
+
+.actions button i.active{
+  color: var(--blue-color); /*   선택된 아이콘은 파란색 처리 */
+}
