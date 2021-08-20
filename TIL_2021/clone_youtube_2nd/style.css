@@ -31,6 +31,18 @@ body {
   font-family:Roboto; /* 글꼴 지정 */
 }
 
+ul {
+  list-style: none;
+}
+
+/* 버튼형식 지정하기  */
+button,
+button:focus{
+  border: none;
+  cuser: pointer;
+  outline:none;
+}
+
 /* header */
 header {
   display: flex;
@@ -65,3 +77,41 @@ header .icons .fa-search {
   height: 100%;
   max-width:1000px; /*   최고 너비 지정 */
 }
+
+.info {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;  /*   한줄로 배치  */
+  font-size: var(--font-samll);
+  color: var(--blue-color)
+}
+
+.info .metadata .hashtags li{
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton{
+  display: flex;
+}
+
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-medium);
+  /*   타이틀의 내용을 2줄로 제한  : line clamp */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+}
+
+.info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
