@@ -8,7 +8,7 @@
     --grey-light-color:#DCDCDC;
     
 /*   size */
-      --side-padding: 12px;
+      --padding: 12px;
       --avatar-size: 36px;
 
 /*   Font size */
@@ -27,3 +27,25 @@
 body {
   font-family:Roboto;
 }
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo{
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons .fa-search {
+  margin-right: var(--padding)
+}
+
