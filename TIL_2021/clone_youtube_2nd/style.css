@@ -1,3 +1,4 @@
+/* 변수를 미리 선언 */
 :root {
 /* color */
     --white-color:#FFFAFA;
@@ -18,20 +19,22 @@
       --font-micro: 10px;
 }
 
+/* 문서전체에 적용 */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* 바디 부분에 적용 */
 body {
-  font-family:Roboto;
+  font-family:Roboto; /* 글꼴 지정 */
 }
 
 /* header */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*   아이템을 첫줄에 일정하게 배치 */
   padding: var(--padding);
   background-color: var(--black-color);
   color: var(--white-color);
@@ -39,7 +42,7 @@ header {
 
 header .logo{
   font-size: var(--font-large);
-}
+} /* 아이콘 크기를 폰트 크기로 지정 */
 
 header .logo i {
   color: var(--red-color);
@@ -49,3 +52,16 @@ header .icons .fa-search {
   margin-right: var(--padding)
 }
 
+/* video player */
+.player {
+  position: sticky;   /*   스크롤 하더라도 상단에 플레이어 고정 */
+  top: 0;  /*   탑 0에 비디오 고정 */
+  text-align:center;
+  background-color:var(--black-color);
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width:1000px; /*   최고 너비 지정 */
+}
