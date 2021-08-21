@@ -80,7 +80,7 @@ header .icons .fa-search {
   max-width:1000px; /*   최고 너비 지정 */
 }
 
-.info {
+body > .info {
   padding: var(--padding);
 }
 
@@ -180,3 +180,48 @@ header .icons .fa-search {
   text-transform: uppercase;  /*   글자를 대문자로 바꿔줌  */
 }
 
+/* UpNext Section */
+.UpNext {
+  padding: 0 var(--padding);
+}
+
+
+.UpNext > .title {  /* upnext 바로 아래 타이틀에게 고정하기 위해서 >를 사용  */
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: var(--padding);  /*   todo: 작동하지 않음. */
+}
+
+.UpNext .item{
+  display: flex;
+}
+
+.UpNext .item .img{
+  flex: 1 1 35%;  /* 크기를 줄이더라도 1대 1대 베이스는 35%크기  */
+}
+
+.UpNext .item .img img{
+  width: 100%;
+}
+
+.UpNext .item .info{
+  flex: 1 1 60%;
+}
+
+.UpNext .item .moreBtn{
+  flex: 1 1 5%;
+}
+
+.UpNext .item .info {
+  display: flex;
+  flex-direction: column; /*   플렉스 한후에 쌓는 방향을 세로로 쌓기  */
+}
+
+.UpNext .item .info .title{
+  font-size: var(--font-small);
+}
+
+.UpNext .item .info .name,
+.UpNext .item .info .views{
+  font-size: var(--font-micro);
+}
