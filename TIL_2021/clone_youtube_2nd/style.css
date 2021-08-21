@@ -140,3 +140,26 @@ header .icons .fa-search {
 .actions button i.active{
   color: var(--blue-color); /*   선택된 아이콘은 파란색 처리 */
 }
+
+/* Channel */
+.channel {
+  display : flex;
+  justify-content: space-between; /*   아이템들을 한줄에 골고루 배치 */
+}
+
+.channel .metadata{
+  display: flex;
+  align-items: center;  /*   아이템을 세로로 가운데정렬  */
+}
+
+.channel .metadata img{
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%; /*   이미지의 테두리를 둥글게 설정  */
+}
+
+.channel .metadata .info{
+  display: flex;
+  flex-direction: column; /*   한줄로 나란하게 플렉스된 아이템을 층으로 쌓음  */
+}
+
