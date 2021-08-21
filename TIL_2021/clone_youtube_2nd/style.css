@@ -118,26 +118,26 @@ header .icons .fa-search {
 }
 
 /* Action Button */
-.actions {
+.info .actions {
   display: flex;
   justify-content: space-around;  /*   아이콘들을 한줄에 일정한 간격으로 배열하기  */
   margin: var(--padding) 0;
 }
 
-.actions button {
+.info .actions button {
   display: flex;
   flex-direction: column; /*   버튼과 글자를 아래위로 두기 위해서 플레스 - 플래스 방향은 칼럼 */
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
 
-.actions button i{
+.info .actions button i{
   margin: 0 auto; /*   버튼과 아래의 글자를 가운데에 정렬하기위해서 여백 조정  */
   margin-bottom: calc(var(--padding) /2);
   font-size : var(--icon-large);
 }
 
-.actions button i.active{
+.info .actions button i.active{
   color: var(--blue-color); /*   선택된 아이콘은 파란색 처리 */
 }
 
@@ -145,6 +145,8 @@ header .icons .fa-search {
 .channel {
   display : flex;
   justify-content: space-between; /*   아이템들을 한줄에 골고루 배치 */
+  border-top: 1px solid var(--grey-light-color);  /*   영역을 구분할 선긋기  */
+  border-bottom: 1px solid var(--grey-light-color); /*   영역을 구분할 선긋기  */
 }
 
 .channel .metadata{
@@ -161,5 +163,20 @@ header .icons .fa-search {
 .channel .metadata .info{
   display: flex;
   flex-direction: column; /*   한줄로 나란하게 플렉스된 아이템을 층으로 쌓음  */
+}
+
+.channel .metadata .info .name{
+  font-size: var(--font-medium);
+}
+
+.channel .metadata .subcribers{
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.channel .subscribe{
+  font-size: var(--font-small);
+  color: var(--red-color);
+  text-transform: uppercase;  /*   글자를 대문자로 바꿔줌  */
 }
 
