@@ -228,3 +228,15 @@ body > .info {
   font-size: var(--font-micro);
   color: var(--grey-dark-color);
 }
+
+.infoAndUpNext {
+  display: flex;  /* 평소에는 플렉스가 컬럼 형태 폭이 768이내일때 */
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+  .infoAndUpNext{
+    flex-direction: row;  /*   스크린이 768보다 커지면 플렉스 방향을 열로(옆으로)구성 */
+    margin; var(--padding) 0;
+  }
+}
