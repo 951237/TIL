@@ -31,90 +31,103 @@
     <video controls autoplay src="https://youtu.be/efvdh6b-mfY">테스트 영상</video> <!-- 비디오 링크, 서버직접 동영상도 가능-->
   </section>
 
-  <!-- video info -->
-  <section class="info">
-    <!-- metadata -->
-    <div class="metadata">
-      <div class="hashtags">
-        <li>#951237</li>
-        <li>#951237&coding</li>
-        <li>#951237&hope</li>
-      </div>
-      <div class="titleAndButton">
-        <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt aspernatur minus
-          ratione accusantium amet nihil accusamus nulla asperiores enim incidunt quaerat, doloribus placeat unde
-          temporibus. Recusandae vitae hic harum.</span>
-        <button class="moreBtn">
-          <i class="fas fa-caret-down"></i>
-        </button>
-      </div>
-      <div class="views">
+  <!--   info and UpNext -->
+  <div class="infoAndUpNext">
+    <!-- video info -->
+    <section class="info">
+      <!-- metadata -->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#951237</li>
+          <li>#951237&coding</li>
+          <li>#951237&hope</li>
+        </ul>
+        <div class="titleAndButton">
+          <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt aspernatur minus
+            ratione accusantium amet nihil accusamus nulla asperiores enim incidunt quaerat, doloribus placeat unde
+            temporibus. Recusandae vitae hic harum.</span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
         <span class="views">1M views 1 month</span>
       </div>
-    </div>
 
-    <!-- actions -->
-    <div class="actions">
-      <li><button><i class="fas fa-thumbs-up">1K</i></button></li>
-      <li><button><i class="fas fa-thumbs-down">0</i></button></li>
-      <li><button><i class="fas fa-share">Share</i></button></li>
-      <li><button><i class="fas fa-plus">Save</i></button></li>
-      <li><button><i class="fab fa-font-awesome-flag"></i>Report</button></li>
-    </div>
+      <!-- actions -->
+      <ul class="actions">
+        <li><button><i class="active fas fa-thumbs-up"></i>1K</button></li>
+        <li><button><i class="fas fa-thumbs-down"></i>0</button></li>
+        <li><button><i class="fas fa-share"></i>Share</button></li>
+        <li><button><i class="fas fa-plus"></i>Save</button></li>
+        <li><button><i class="fab fa-font-awesome-flag"></i>Report</button></li>
+      </ul>
 
-    <!-- channel description-->
-    <div class="channel">
-      <div class="metadata">
-        <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/a85d0594017900001.jpg" alt="">
-        <div class="info">
-          <span class="name">열혈코딩 by 951237</span>
-          <sapn class="subcribers">1M subcribers</sapn>
+      <!-- channel description-->
+      <div class="channel">
+        <div class="metadata">
+          <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/a85d0594017900001.jpg" alt="">
+          <div class="info">
+            <span class="name">열혈코딩 by 951237</span>
+            <sapn class="subcribers">1M subcribers</sapn>
+          </div>
         </div>
+        <button class="subscribe">subcribe</button>
       </div>
-      <button class="subscribe">subcribe</button>
-    </div>
-  </section>
+    </section>
 
-  <!-- upnext section -->
-  <section class="UpNext">
-    <sapn class="title">Up next</sapn>
-    <ul>
-      <li class="item">
-        <img
-          src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/TRE/image/jSbbIDabdmD5S54u1gX-1W64ok0"
-          alt="">
-        <div class="info">
-          <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate fugit excepturi?
-            Dolores, adipisci beatae.</span>
-          <span class="name">열혈코딩 by 951237</span>
-          <sapn class="views">870K views</sapn>
-        </div>
-        <button class="moreBtn">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
-      </li>
-      <li class="item">
-        <img src="https://imgnn.seoul.co.kr/img/upload/2020/05/19/SSI_20200519153745.jpg" alt="" class="src">
-        <span class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatum cumque unde
-          repellendus sed veniam recusandae natus!</span>
-        <span class="name">열혈코딩 by 951237</span>
-        <span class="views">55K views</span>
-        <button class="moreBtn">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
-      </li>
-      <li class="item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkXgvOTsFoVwXkbeRBzrN1mklImQ3uEA_3g&usqp=CAU"
-          alt="" class="src">
-        <span class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi quam ea a.</span>
-        <span class="name">열혈코딩 by 951237</span>
-        <span class="views">256K views</span>
-        <button class="moreBtn">
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
-      </li>
-    </ul>
-  </section>
+    <!-- upnext section -->
+    <section class="UpNext">
+      <sapn class="title">Up next</sapn>
+      <ul>
+        <li class="item">
+          <div class="img">
+            <img
+              src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/TRE/image/jSbbIDabdmD5S54u1gX-1W64ok0"
+              alt="">
+          </div>
+          <div class="info">
+            <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate fugit excepturi?
+              Dolores, adipisci beatae.</span>
+            <span class="name">열혈코딩 by 951237</span>
+            <sapn class="views">870K views</sapn>
+          </div>
+          <button class="moreBtn">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </li>
+        <li class="item">
+          <div class="img">
+            <img src="https://imgnn.seoul.co.kr/img/upload/2020/05/19/SSI_20200519153745.jpg" alt="" class="src">
+          </div>
+          <div class="info">
+            <span class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatum cumque unde
+              repellendus sed veniam recusandae natus!</span>
+            <span class="name">열혈코딩 by 951237</span>
+            <span class="views">55K views</span>
+          </div>
+          <button class="moreBtn">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </li>
+        <li class="item">
+          <div class="img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkXgvOTsFoVwXkbeRBzrN1mklImQ3uEA_3g&usqp=CAU"
+              alt="" class="src">
+          </div>
+          <div class="info">
+            <span class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi quam ea a.</span>
+            <span class="name">열혈코딩 by 951237</span>
+            <span class="views">256K views</span>
+          </div>
+          <button class="moreBtn">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </div>
+
 </body>
 
 </html>
