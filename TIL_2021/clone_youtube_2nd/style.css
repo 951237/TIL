@@ -194,10 +194,12 @@ body > .info {
 
 .UpNext .item{
   display: flex;
+  margin-top: var(--padding);
 }
 
 .UpNext .item .img{
   flex: 1 1 35%;  /* 크기를 줄이더라도 1대 1대 베이스는 35%크기  */
+  margin-right: var(--padding);
 }
 
 .UpNext .item .img img{
@@ -224,4 +226,5 @@ body > .info {
 .UpNext .item .info .name,
 .UpNext .item .info .views{
   font-size: var(--font-micro);
+  color: var(--grey-dark-color);
 }
