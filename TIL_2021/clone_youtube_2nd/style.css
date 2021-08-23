@@ -100,17 +100,26 @@ body > .info {
 
 .info .metadata .titleAndButton .title {
   font-size: var(--font-medium);
-  /*   타이틀의 내용을 2줄로 제한  : line clamp */
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .title.clamp{ /* 타이틀이 클릭되면 적용하기 */
+    /*   타이틀의 내용을 2줄로 제한  : line clamp */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: var(--padding);
 }
 
 .info .metadata .titleAndButton .moreBtn {
   height: 100%;
+  transition: transform 300ms easy-in-out
 }
+
+.info .metadata .titleAndButton .moreBtn.clicked {  /* moreBtn을 클릭하면 버튼이 180도 돌아감. */
+  transform: rotate(180deg);
+}
+
 
 .info .views {
   font-size: var(--font-small);
