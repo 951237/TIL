@@ -1,0 +1,21 @@
+:root {
+/*   color */
+      --white-color: #FFFFFF;
+      --black-color: #000000;
+      --blue-color: #0000FF;
+      --red-color: #FF0000;
+      --grey-dark-color: #C0C0C0;
+      --grey-light-color: #F5F5F5;
+      
+/*   size */
+      --padding: 12px;
+      --avatar-size: 36px;
+      
+  
+/*   font size */
+      --font-large: 18px;
+      --font-medium: 14px;
+      --font-small: 12px;
+      --font-micro: 10px;
+  
+}
