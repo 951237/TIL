@@ -16,6 +16,16 @@
       --font-large: 18px;
       --font-medium: 14px;
       --font-small: 12px;
-      --font-micro: 10px;
-  
+      --font-micro: 10px; 
+}
+
+/* 기본설정 - 패딩, 마진 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;  /*   기본글꼴 설정 */
 }
