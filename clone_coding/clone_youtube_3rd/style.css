@@ -29,3 +29,24 @@
 body {
   font-family: Roboto;  /*   기본글꼴 설정 */
 }
+
+/*  헤더설정 */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo {
+  font-size: var(--font-large);  /*   로고 사이즈를 폰트크기로 설정 */
+}
+
+header .logo i {
+  color: var(--red-color);  /*   아이콘 색깔 변경 */
+}
+
+header .icons .fa-search{
+  margin-right: var(--padding);  /*   돋보기 아이콘 오른쪽 여백 주기 */
+}
