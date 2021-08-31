@@ -30,6 +30,19 @@ body {
   font-family: Roboto;  /*   기본글꼴 설정 */
 }
 
+/* 리스트 모양 없애기 */
+ul {
+  list-style: none;
+}
+
+/* 버튼 설정 */
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 /*  헤더설정 */
 header {
   display: flex;
@@ -64,4 +77,32 @@ header .icons .fa-search{
   width: 100%;
   height: 100%;
   max-width: 1000px;
+}
+
+/* video info */
+.info{
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags{
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.info .metadata .hashtags li{
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton{
+  display:flex;
+}
+
+.info .metadata .titleAndButton .title{
+  font-size: var(--font-medium);
+/*   타이틀 2줄로 제한 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
