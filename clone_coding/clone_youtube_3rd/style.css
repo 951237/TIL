@@ -105,4 +105,14 @@ header .icons .fa-search{
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%; /*   버튼의 크기조정 */
+}
+
+.info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
 }
