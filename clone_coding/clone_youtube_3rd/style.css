@@ -116,3 +116,27 @@ header .icons .fa-search{
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
+
+/* action button */
+.info .action {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding);
+}
+
+.info .action button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.info .action i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: 16px;
+}
+
+.action button i.active{
+  color: var(--blue-color);
+}
