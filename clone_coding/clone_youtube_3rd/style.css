@@ -129,14 +129,55 @@ header .icons .fa-search{
   flex-direction: column;
   font-size: var(--font-small);
   color: var(--grey-dark-color);
+  background: var(--white-color);
 }
 
 .info .action i {
   margin: 0 auto;
   margin-bottom: calc(var(--padding) / 2);
   font-size: 16px;
+
 }
 
 .action button i.active{
   color: var(--blue-color);
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .metadata .info .name {
+  font-size: var(--font-medium);
+}
+
+.channel .metadata .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.channel .subscribe {
+  font-size: var(--font-medium);
+  text-transform: uppercase;
+  color: var(--red-color);
+  background: var(--white-color)
 }
