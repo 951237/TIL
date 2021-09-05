@@ -190,7 +190,7 @@ body > .info{
 .UpNext > .title {
   font-size: var(--font-medium);
   color: var(--grey-dark-color);
-  margin-bottom: var(--padding);
+  margin-bottom: calc(var(--padding) /2);
 }
 
 .UpNext .item{
@@ -212,8 +212,10 @@ body > .info{
 }
 
 .UpNext .item .moreBtn{
+  height: 100%;
   flex: 1 1 5%;
   background: var(--white-color);
+  
 }
 
 .UpNext .item .info{
@@ -229,4 +231,16 @@ body > .info{
 .UpNext .item .info .views{
   font-size: var(--font-micro);
   color: var(--grey-dark-color);
+}
+
+.infoAndUpNext{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+  .infoAndUpNext{
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
 }
