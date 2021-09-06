@@ -1,0 +1,73 @@
+/* 변수설정  */
+:root {
+/*   color */
+  --white-color: #FFFFFF;
+  --orange-color: #FFA500;
+  --navy-color: #483D8B;
+  
+/*   size */
+  --padding-wide: 12px;
+  --padding-medium: 8px;
+  --padding-narrow: 6px;
+  
+/*   font */
+  --font-logo: 24px;
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro';
+}
+
+a {
+  text-decoration: none;  /*   링크 밑줄 없애기 */
+  color: var(--white-color);
+}
+
+li {
+  list-style: none; /*   리스트 말머리 없애기 */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /*   수직정렬 */
+  background-color: var(--navy-color);
+  padding: 8px 12px;  /*   위아래 좌우 */
+}
+
+.navbar__logo {
+  font-size: var(--font-logo);
+  color: var(--white-color);
+}
+
+.navbar__logo i {
+  color: var(--orange-color);
+}
+
+/* 마우스가 메뉴위에 올라올때 하이라이트 주기 */
+.navbar__menu li:hover {
+  background-color: var(--orange-color);
+  border-radius: 4px;   /*   사각형의 모서리를 약간 둥글게 */
+  
+}
+.navbar__menu {
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__menu li{
+  padding: 8px 12px;
+}
+
+.navbar__icons {
+  color: var(--white-color);
+  display: flex;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
