@@ -5,10 +5,12 @@
   --orange-color: #FFA500;
   --navy-color: #483D8B;
   
+  
 /*   size */
   --padding-wide: 12px;
   --padding-medium: 8px;
   --padding-narrow: 6px;
+  
   
 /*   font */
   --font-logo: 24px;
@@ -66,8 +68,33 @@ li {
 .navbar__icons {
   color: var(--white-color);
   display: flex;
+  padding-left: 0;
 }
 
 .navbar__icons li {
   padding: 8px 12px;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar__menu {
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__icons {
+    justify-content: center;
+    width: 100%
+  }
+  
+}
+
