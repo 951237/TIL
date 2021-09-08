@@ -75,6 +75,14 @@ li {
   padding: 8px 12px;
 }
 
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: var(--font-large);
+  color: var(--orange-color);
+}
+
 @media screen and (max-width: 768px) {
   .navbar{
     flex-direction: column;
@@ -82,18 +90,24 @@ li {
   }
   
   .navbar__menu {
+    display: none;
     flex-direction:column;
     align-items: center;
     width: 100%;
   }
   
-  .navbar__menu li {
+  .navbar__menu li { 
     width: 100%;
     text-align: center;
   }
   .navbar__icons {
+    display: none;
     justify-content: center;
     width: 100%
+  }
+  
+  .navbar__toggleBtn {
+    display: block;
   }
   
 }
