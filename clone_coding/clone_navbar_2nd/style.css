@@ -14,6 +14,7 @@
   
   
 /*   font size */
+  --font-big: 24px;
   --font-lar: 18px;
   --font-med: 14px;
   --font-sml: 12px;
@@ -22,11 +23,16 @@
 
 body {
   margin: 0;
+  font-family: 'Source Sans Pro';
 }
 
 a {
   text-decoration: none;
   color: var(--white-color);
+}
+
+li {
+    list-style: none;
 }
 
 .navbar {
@@ -36,4 +42,36 @@ a {
   background-color: var(--navy-color);
 }
 
+.navbar__logo {
+  font-size: var(--font-big);
+  color: var(--white-color);
+}
 
+.navbar__logo i{
+  color: var(--orange-color);
+}
+
+.navbar__menu {
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__menu li{
+  /*   나중에 마우스를 올렸을 때 클릭할 수 있는 공간을 주기 위해서 패딩을 좌우로 8, 12px씩 여유롭게 설정 */
+  padding: 8px 12px;
+}
+
+/* 메뉴에 마우스 올렸을 때 배경색 나타나기 */
+.navbar__menu li:hover {
+  background-color: var(--orange-color);
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  color: var(--white-color);
+  display: flex;
+}
+
+.navbar__icons li{
+  padding: 8px 12px;
+}
