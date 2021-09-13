@@ -138,6 +138,24 @@
 			}
 		}
 	</style>
+	<script>
+		function back() {
+			let url = window.location.href;
+			let new_url = url.split('result.html')[0] + 'index.html';
+			window.location.href = new_url;
+		}
+
+		function share() {
+			var t = document.createElement("textarea");
+			document.body.appendChild(t);
+			t.value = window.location.href;
+			t.select();
+			document.execCommand('copy');
+			document.body.removeChild(t);
+			alert('복사 완료!')
+		}
+
+	</script>
 </head>
 
 <body>
@@ -157,8 +175,8 @@
 
 	<!--   버튼 생성 ; 뒤로가기 및 공유하기 -->
 	<div class="btns">
-		<button class="btn-back">뒤로가기</button>
-		<button class="btn-share">공유하기</button>
+		<button onclick='back()' class="btn-back">뒤로가기</button>
+		<button onclick='share()' class="btn-share">공유하기</button>
 	</div>
 
 </body>
