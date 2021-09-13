@@ -15,6 +15,7 @@
       --red-color: #FF0000;
       --white-color: #FFFFFF;
 
+
       /*   padding */
 
       /*   fontsize */
@@ -22,6 +23,7 @@
       --font-big: 36px;
       --font-large: 24px;
       --font-mid: 12px;
+
     }
 
     body {
@@ -131,6 +133,26 @@
     body .rtan12 {
       background-image: url('https://new-year.spartacodingclub.kr/images/yearS12.png');
     }
+
+    @media screen and (max-width: 780px) {
+      body {
+        background-position: 70px -70px;
+        background-size: 500px;
+      }
+
+      .rtans {
+        width: 100%;
+      }
+
+      .mytitle {
+        margin-top: var(--padding20);
+        margin-bottom: var(--padding20);
+      }
+
+      .rtans>a {
+        color: var(--darkred-color);
+      }
+    }
   </style>
 </head>
 
@@ -140,7 +162,7 @@
     <h2>by 르탄, 믿거나 말거나~</h2>
   </div>
   <div class="rtans">
-    <a class="rtan1" href="result.html"><span>쥐</span></a>
+    <a class="rtan1" href="#"><span>쥐</span></a>
     <a class="rtan2" href="#"><span>소</span></a>
     <a class='rtan3' href="#"><span>호랑이</span></a>
     <a class='rtan4' href="#"><span>토끼</span></a>

@@ -14,8 +14,13 @@
 			--ivory-color: #FFFFCC;
 			--red-color: #FF0000;
 			--white-color: #FFFFFF;
+			--green-color: #99FF99;
 
 			/*   padding */
+			--padding10: 10px;
+			--padding20: 20px;
+
+
 
 			/*   fontsize */
 			--font-huge: 56px;
@@ -109,6 +114,28 @@
 			cursor: pointer;
 
 			margin-left: 10px
+		}
+
+		@media screen and (max-width:780px) {
+			body {
+				background-position: 70px -70px;
+				background-size: 500px;
+			}
+
+			.rtan {
+				margin-top: 50px;
+			}
+
+			.msg {
+				font-size: var(--font-mid);
+				line-height: 36px;
+				margin-bottom: 36px;
+				padding: var(--padding10);
+			}
+
+			.msg>br {
+				display: none;
+			}
 		}
 	</style>
 </head>
