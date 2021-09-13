@@ -25,9 +25,15 @@ body {
   background-repeat: no-repeat;
 }
 
+a {
+  text-decoration: none;
+}
+
 .mytitle {
   text-align: center;
   color: var(--darkred-color);
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
   
 .mytitle > h1 {
@@ -44,6 +50,10 @@ body {
   margin: auto;
 }
 
+.rtans >a:hover{
+  background-color: var(--darkred-color);
+}
+
 .rtans > a{
   display: block;
   width: 150px;
@@ -52,12 +62,18 @@ body {
   border-radius: 150px;
   background: var(--white-color);
   box-shadow: 0px 0px 10px 0px var(--darkred-color);
+  text-align: center;
   
   margin: 10px;
   
 /*   원안에 12지신 이미지 넣기 */
   background-size: cover;
   background-position: center;
+}
+
+.rtans span{
+  color: var(--white-color);
+  font-size: var(--font-large);
 }
 
 body .rtan1 {background-image: url('https://new-year.spartacodingclub.kr/images/yearS1.png'); }
