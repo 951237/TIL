@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
 	<title>2021년 신년운세</title>
 	<style>
 		:root {
@@ -80,6 +81,7 @@
 			font-size: var(--font-large);
 			line-height: 48px;
 			text-align: center;
+			display: none;
 		}
 
 		.btns {
@@ -131,6 +133,7 @@
 				line-height: 36px;
 				margin-bottom: 36px;
 				padding: var(--padding10);
+				display: none;
 			}
 
 			.msg>br {
@@ -166,11 +169,76 @@
 
 	<!--   결과화면 타이틀 및 메세지 -->
 	<h1 class="title">2021년 쥐뛰의 운세는!</h1>
-	<p class="msg">
+	<p class="msg" id="rtan1" aria-label="쥐띠">
 		마음을 알아주는 따뜻한 사람을 만날 것이야!<br />
 		일이 잘 안 풀리는 것 같아도<br />
 		연말에는 호탕하게 웃을 수 있을 지어니<br />
 		너무 걱정하지 말고 하루하루 잘 나아가봐~
+	</p>
+	<p class="msg" id="rtan2" aria-label="소띠">
+		올해 큰 돈이 들어올 것 같은데?<br />
+		어디든 투자하고 싶은 곳이 있으면<br />
+		자신 있게 해봐도 좋을 것 같아!<br />
+		너무 무리는 하지 말구!
+	</p>
+	<p class="msg" id="rtan3" aria-label="호랑이띠">
+		주변 사람들로부터 많은 도움을 받는<br />
+		한 해가 되겠구만!<br />
+		오랜 지인들에게 미리 연락을 해보는 건 어떨까?<br />
+		지금 전화기를 들어봐!
+	</p>
+	<p class="msg" id="rtan4" aria-label="토끼띠">
+		취업운이 특히 좋은 한 해야!<br />
+		승진, 이직, 취직 모두 다 잘 되겠는 걸?<br />
+		꼭 하고 싶은 일이 있었으면<br />
+		주저 말고 도전해봐!
+	</p>
+	<p class="msg" id="rtan5" aria-label="용띠">
+		가까운 친구나 가족에게 좋은 일이 생기는 한 해구만!<br />
+		컨디션도 좋고 준비하는 일 모두 좋은 결과를 얻을거야~<br />
+		망설이지 말고!<br />
+		앞으로 나아가봐~!
+	</p>
+	<p class="msg" id="rtan6" aria-label="뱀띠">
+		봄날에 선선하게 부는 바람처럼<br />
+		올해는 무난~하게 지나가겠어!<br />
+		너무 조바심 갖지 말고, 마음 편안히 먹고<br />
+		한 걸음 한 걸음 나아가자!
+	</p>
+	<p class="msg" id="rtan7" aria-label="말띠">
+		긍정적인 마음으로 천천히 일을 추진해봐!<br />
+		어려울 땐, 주변의 도움을 받아보는 것도 좋겠어~<br />
+		하루하루 성실히 보내다보면,<br />
+		반드시 바라던 일이 이루어질거야!
+	</p>
+	<p class="msg" id="rtan8" aria-label="양띠">
+		모처럼 컨디션이 최상인 해!<br />
+		새해 다짐으로 운동을 시작하면 어떨까?<br />
+		달리기, 헬스트레이닝, 요가 .. 뭐든 좋아!<br />
+		기분 좋고 에너지 넘칠 일만 있을거야!
+	</p>
+	<p class="msg" id="rtan9" aria-label="원숭이띠">
+		미래에 대한 고민이 많은 해가 될거야!<br />
+		자기계발도 틈틈히 잊지말고,<br />
+		기회가 왔을 땐 주저말고 잡도록해!<br />
+		또 어떤 재밌는 인생이 펼쳐질지 모르니까!
+	</p>
+	<p class="msg" id="rtan10" aria-label="닭띠">
+		고생 끝에 낙이 온다라는 말,<br />
+		올해를 두고 하는 얘기일까?<br />
+		오랫동안 준비해온 일이 있다면<br />
+		드디어 결실을 맺는 한 해가 될거야!
+	</p>
+	<p class="msg" id="rtan11" aria-label="개띠">
+		올해 분위기가 심상치 않아.<br />
+		좋은 것만 먹고, 운동도 좀 더 하고!<br />
+		건강에 특히 신경 쓰는 한 해가 되도록 해!
+	</p>
+	<p class="msg" id="rtan12" aria-label="돼지띠">
+		새로운 인연을 아주 많이 만나는 해가 될 것 같은데?<br />
+		그 중에 평생 도움 받을 귀인이 있으니,<br />
+		만나는 모든 사람들에게 친절하고,<br />
+		따뜻하게 다가가봐!
 	</p>
 
 	<!--   버튼 생성 ; 뒤로가기 및 공유하기 -->
