@@ -41,9 +41,10 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   width: 1200px;
+  margin: auto;
 }
 
-.rtans a{
+.rtans > a{
   display: block;
   width: 150px;
   height: 150px;
@@ -51,5 +52,24 @@ body {
   border-radius: 150px;
   background: var(--white-color);
   box-shadow: 0px 0px 10px 0px var(--darkred-color);
+  
   margin: 10px;
+  
+/*   원안에 12지신 이미지 넣기 */
+  background-size: cover;
+  background-position: center;
 }
+
+body .rtan1 {background-image: url('https://new-year.spartacodingclub.kr/images/yearS1.png'); }
+body .rtan2 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS2.png'); } 
+body .rtan3 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS3.png'); } 
+body .rtan4 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS4.png'); } 
+body .rtan5 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS5.png'); } 
+body .rtan6 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS6.png'); } 
+body .rtan7 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS7.png'); } 
+body .rtan8 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS8.png'); } 
+body .rtan9 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS9.png'); } 
+body .rtan10 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS10.png'); } 
+body .rtan11 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS11.png'); } 
+body .rtan12 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS12.png'); }
+
