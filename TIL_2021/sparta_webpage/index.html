@@ -1,19 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
   <title>2021년 신년운세</title>
+  <style>
+    :root {
+      /*   color */
+      --darkred-color: #CC0000;
+      --ivory-color: #FFFFCC;
+      --red-color: #FF0000;
+      --white-color: #FFFFFF;
+
+      /*   padding */
+
+      /*   fontsize */
+      --font-huge: 56px;
+      --font-big: 36px;
+      --font-large: 24px;
+      --font-mid: 12px;
+    }
+
+    body {
+      font-family: 'Yeon Sung', cursive;
+      margin: 0;
+      background: var(--ivory-color);
+      background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+      background-position: 300px 100px;
+      background-repeat: no-repeat;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .mytitle {
+      text-align: center;
+      color: var(--darkred-color);
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+
+    .mytitle>h1 {
+      margin-bottom: 0;
+      font-size: var(--font-huge);
+    }
+
+    .rtans {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .rtans>a:hover {
+      background-color: var(--darkred-color);
+    }
+
+    .rtans>a {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border: solid 3px var(--darkred-color);
+      border-radius: 150px;
+      background: var(--white-color);
+      box-shadow: 0px 0px 10px 0px var(--darkred-color);
+      text-align: center;
+
+      margin: 10px;
+
+      /*   원안에 12지신 이미지 넣기 */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .rtans span {
+      color: var(--white-color);
+      font-size: var(--font-large);
+    }
+
+    body .rtan1 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS1.png');
+    }
+
+    body .rtan2 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS2.png');
+    }
+
+    body .rtan3 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS3.png');
+    }
+
+    body .rtan4 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS4.png');
+    }
+
+    body .rtan5 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS5.png');
+    }
+
+    body .rtan6 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS6.png');
+    }
+
+    body .rtan7 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS7.png');
+    }
+
+    body .rtan8 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS8.png');
+    }
+
+    body .rtan9 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS9.png');
+    }
+
+    body .rtan10 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS10.png');
+    }
+
+    body .rtan11 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS11.png');
+    }
+
+    body .rtan12 {
+      background-image: url('https://new-year.spartacodingclub.kr/images/yearS12.png');
+    }
+  </style>
 </head>
+
 <body>
   <div class="mytitle">
     <h1>2021 신년운세</h1>
-    <h2>by 르탄, 믿거나 말거나~</h2>    
+    <h2>by 르탄, 믿거나 말거나~</h2>
   </div>
   <div class="rtans">
-    <a class="rtan1" href="#"><span>쥐</span></a>
+    <a class="rtan1" href="result.html"><span>쥐</span></a>
     <a class="rtan2" href="#"><span>소</span></a>
     <a class='rtan3' href="#"><span>호랑이</span></a>
     <a class='rtan4' href="#"><span>토끼</span></a>
@@ -27,4 +154,5 @@
     <a class='rtan12' href="#"><span>돼지</span></a>
   </div>
 </body>
+
 </html>

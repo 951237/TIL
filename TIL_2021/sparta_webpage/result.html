@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<title>2021년 신년운세</title>
+	<style>
+		:root {
+			/*   color */
+			--darkred-color: #CC0000;
+			--ivory-color: #FFFFCC;
+			--red-color: #FF0000;
+			--white-color: #FFFFFF;
+
+			/*   padding */
+
+			/*   fontsize */
+			--font-huge: 56px;
+			--font-big: 36px;
+			--font-large: 24px;
+			--font-mid: 12px;
+		}
+
+		body {
+			font-family: 'Yeon Sung', cursive;
+			margin: 0;
+			background: var(--ivory-color);
+			background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+			background-position: 300px 100px;
+			background-repeat: no-repeat;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.rtan {
+			display: block;
+			width: 200px;
+			height: 200px;
+			border: solid 3px var(--darkred-color);
+			border-radius: 200px;
+			background: var(--darkred-color);
+			box-shadow: 0px 0px 10px 0px var(--darkred-color);
+			text-align: center;
+
+			margin: 80px auto 50px auto;
+			/*   상단 우측 하단 좌측 시계방향 */
+
+			/*   원안에 12지신 이미지 넣기 */
+			background-image: url('https://new-year.spartacodingclub.kr/images/yearS1.png');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.rtan span {
+			color: var(--white-color);
+			font-size: var(--font-big);
+		}
+
+		.title {
+			color: var(--darkred-color);
+			font-size: var(--font-big);
+			text-align: center;
+		}
+
+		.msg {
+			color: var(--darkred-color);
+			font-size: var(--font-large);
+			line-height: 48px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="rtan">
+		<span>쥐</span>
+	</div>
+	<h1 class="title">2021년 쥐뛰의 운세는!</h1>
+	<p class="msg">
+		마음을 알아주는 따뜻한 사람을 만날 것이야!<br />
+		일이 잘 안 풀리는 것 같아도<br />
+		연말에는 호탕하게 웃을 수 있을 지어니<br />
+		너무 걱정하지 말고 하루하루 잘 나아가봐~
+	</p>
+</body>
+
+</html>
