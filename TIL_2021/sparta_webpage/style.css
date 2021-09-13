@@ -1,0 +1,33 @@
+:root{
+/*   color */
+  --darkred-color: #CC0000;
+  --ivory-color:#FFFFCC;
+  
+  
+/*   padding */
+  
+/*   fontsize */
+  --font-huge: 56px;
+  --font-big: 36px;
+  --font-large: 24px;
+  --font-mid: 12px;
+    
+}  
+
+body {
+  margin: 0;
+  background: var(--ivory-color);
+  background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+  background-position: 300px 100px;
+  background-repeat: no-repeat;
+}
+
+.mytitle {
+  text-align: center;
+  color: var(--darkred-color);
+}
+  
+.mytitle > h1 {
+  margin-bottom: 0;
+  font-size: var(--font-huge);
+}
