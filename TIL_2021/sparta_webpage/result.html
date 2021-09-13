@@ -21,16 +21,19 @@
 			--font-huge: 56px;
 			--font-big: 36px;
 			--font-large: 24px;
-			--font-mid: 12px;
+			--font-mid: 18px;
 		}
 
 		body {
-			font-family: 'Yeon Sung', cursive;
 			margin: 0;
 			background: var(--ivory-color);
 			background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
 			background-position: 300px 100px;
 			background-repeat: no-repeat;
+		}
+
+		* {
+			font-family: 'Yeon Sung', cursive;
 		}
 
 		a {
@@ -73,13 +76,50 @@
 			line-height: 48px;
 			text-align: center;
 		}
+
+		.btns {
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+		}
+
+		.btn-back {
+			width: 150px;
+			height: 50px;
+
+			color: var(--darkred-color);
+			background: var(--white-color);
+			border: 2px solid var(--darkred-color);
+
+			border-radius: 10px;
+			font-size: var(--font-mid);
+			cursor: pointer;
+		}
+
+		.btn-share {
+			width: 150px;
+			height: 50px;
+
+			color: var(--white-color);
+			background: var(--darkred-color);
+			border: 2px solid var(--darkred-color);
+
+			border-radius: 10px;
+			font-size: var(--font-mid);
+			cursor: pointer;
+
+			margin-left: 10px
+		}
 	</style>
 </head>
 
 <body>
+	<!--   쥐의 아이콘  -->
 	<div class="rtan">
 		<span>쥐</span>
 	</div>
+
+	<!--   결과화면 타이틀 및 메세지 -->
 	<h1 class="title">2021년 쥐뛰의 운세는!</h1>
 	<p class="msg">
 		마음을 알아주는 따뜻한 사람을 만날 것이야!<br />
@@ -87,6 +127,13 @@
 		연말에는 호탕하게 웃을 수 있을 지어니<br />
 		너무 걱정하지 말고 하루하루 잘 나아가봐~
 	</p>
+
+	<!--   버튼 생성 ; 뒤로가기 및 공유하기 -->
+	<div class="btns">
+		<button class="btn-back">뒤로가기</button>
+		<button class="btn-share">공유하기</button>
+	</div>
+
 </body>
 
 </html>
