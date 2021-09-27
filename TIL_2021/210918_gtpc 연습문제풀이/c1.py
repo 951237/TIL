@@ -1,16 +1,15 @@
-import math
-n, m = input("팩토리얼 구할 숫자 입력하세요 : ").split()
-a = int(n)
-b = int(m)
+c = 0
+def f(x, y):
+    global n, m, c
+    if x == n and y == m:  # 도착했을 때문 길을 1개로 인정
+        c += 1
+        return c
+    if x > n or y > m:
+        return
+    f(x+1, y)
+    f(x, y+1)
+    return c
 
-# print(n, m)
-
-# 두 수중에 큰 수가 n, 작은수는 m
-n = max(int(a), int(b)) - 1
-m = min(int(a), int(b)) - 1
-
-# print(n, m)
-
-result = math.factorial(n+m) / (math.factorial(m) * math.factorial(n))
-
-print(int(result))
+n, m = map(int, input().split())
+c = f(1,1)
+print(c)
