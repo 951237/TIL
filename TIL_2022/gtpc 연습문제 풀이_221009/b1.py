@@ -1,0 +1,1 @@
+print("Gyeonggi Teachers Programming Challenge")
