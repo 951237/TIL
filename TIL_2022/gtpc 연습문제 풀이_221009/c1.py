@@ -29,13 +29,32 @@ if i == 3:
 
 # 재가 4대일 경우 
 if i > 3:
-    # lst_s 리스트 정렬하기
-    # lst_s에서 가장 큰수 뽑아서 lst_f에 넣기
-    # 가장 큰수는 result에 저장
-    # lst_f 정렬, 가장 작은값 뽑아서 lst_s에 넣기, result에 넣기
-    # lst_s 정렬, 가장 큰수 2개 뽑기
-    # 큰값 result에 담기
-    # lst_f 정렬, 가장 작은값 뽑아서 lst_s에 넣기, result에 넣기
-    # 처음단계부터 반복
+    # s -> f
+    lst_s.sort()        # lst_s 리스트 정렬하기
+    to_f = lst_s[:2]    # 가장 작은수 2개 선택
+    lst_s.remove(to_f)  # 가장 작은수 2개 제거
+    lst_f.append(to_f)  # lst_s에서 가장 큰수 뽑아서 lst_f에 넣기
+    result.append(to_f[1])  # 가장 큰수는 result에 저장
+
+    # f->s
+    lst_f.sort()    # lst_f 정렬
+    to_s = lst_f[0]    # 가장 작은수 선택    
+    lst_f.remove(to_s)  # 가장 작은수 제거
+    lst_s.append(to_s)  # 가장 작은값 뽑아서 lst_s에 넣기
+    result.append(to_s).    # 가장 작은값 result에 넣기
+
+    # s -> f
+    lst_s.sort()    # lst_s 정렬
+    to_f = lst_s[-2:]   # 가장 큰수 2개 뽑기
+    lst_s.remove(to_f)  # 가장 큰 수 2개 제거
+    lst_f.append(to_f)  # 가장 큰 수 2개 
+    result.append(to_f[1])  # 큰값 result에 담기
+
+    #f -> s
+    lst_f.sort()    # lst_f 정렬
+    to_s = lst_f[0]    # 가장 작은수 선택    
+    lst_f.remove(to_s)  # 가장 작은수 제거
+    lst_s.append(to_s)  # 가장 작은값 뽑아서 lst_s에 넣기
+    result.append(to_s).    # 가장 작은값 result에 넣기
     
 
