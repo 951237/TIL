@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<folders>
+	<folder>
+		<title>All</title>
+		<snippets>
+			<snippet>
+				<title>특 분</title>
+				<content>′ </content>
+			</snippet>
+			<snippet>
+				<title>특 둥근원_투명</title>
+				<content>○ </content>
+			</snippet>
+			<snippet>
+				<title>특 가운데 점</title>
+				<content>• </content>
+			</snippet>
+			<snippet>
+				<title>부곡초 우편번호</title>
+				<content>15310</content>
+			</snippet>
+			<snippet>
+				<title>부곡초 주소</title>
+				<content>경기 안산시 상록구 부곡로 73</content>
+			</snippet>
+			<snippet>
+				<title>반도 영문주소</title>
+				<content>236, Sunoeul 1-ro, Hwaseong-si, Gyeonggi-do</content>
+			</snippet>
+			<snippet>
+				<title>반도 우편번호</title>
+				<content>18238</content>
+			</snippet>
+			<snippet>
+				<title>반도 주소</title>
+				<content>경기도 화성시 수노을1로 236 (새솔동, 송산그린시티 반도유보라 아이비파크) 610동 1904호</content>
+			</snippet>
+			<snippet>
+				<title>진 gmail</title>
+				<content>951237@gmail.com</content>
+			</snippet>
+			<snippet>
+				<title>코딩 깃 - readme</title>
+				<content>gc -m &quot;Update : readme.md - </content>
+			</snippet>
+			<snippet>
+				<title>인성 주제</title>
+				<content>‘M.E.T.A 프로그램으로 어울림 교실 만들기’</content>
+			</snippet>
+		</snippets>
+	</folder>
+</folders>
